@@ -17,7 +17,6 @@ mainApp.controller('MainAppController', function ($scope, $http) {
         $scope.current = {
             name: input.name,
             image: input.thumbnail.path + '.' + input.thumbnail.extension,
-            characters: input,
         };
     };
     

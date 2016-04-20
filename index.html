@@ -13,7 +13,12 @@
             <div id="detail">
                 <h2>{{ current.name }}</h2>
                 <img src="{{ current.image }}">
-                <p># of characters: {{ current.characters }}</p>
+                <ul>
+                <li ng-repeat="event in events | limitTo: 5">
+                    <p>{{ event.title }}</p>
+                    <p>{{ event.description }}</p>
+                </li>
+                    </ul>
             </div>
             <input type="text" ng-model="query" placeholder="search names">
             <ul id="list">
